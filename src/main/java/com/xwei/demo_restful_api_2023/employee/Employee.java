@@ -79,12 +79,6 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", dob=" + dob +
-                ", age=" + age +
-                ", email='" + email + '\'' +
-                '}';
+        return "Employee{" + "id=" + id + ", name='" + name + '\'' + ", dob=" + dob + ", age=" + age + ", email='" + email + '\'' + '}';
     }
 }

@@ -46,7 +46,7 @@ public class EmployeeService {
             throw new IllegalStateException("Employee with id " + employeeId + " doesn't exist.");
         }
 
-        Employee employeeFromDB = employeeRepository.findById(employeeId).orElseThrow(() -> new IllegalStateException("Employee with id " + employeeId + " doesn't exist."));
+        Employee employeeFromDB = employeeRepository.findEmployeeById(employeeId).orElseThrow(() -> new IllegalStateException("Employee with id " + employeeId + " doesn't exist."));
 
         if (employee.getName() != null && !Objects.equals(employeeFromDB.getName(), employee.getName())) {
             employeeFromDB.setName(employee.getName());
